@@ -1,0 +1,591 @@
+* {
+    font-family: 'Inter', sans-serif;
+    margin-left: 5px;
+}
+
+    /*** Avatar ***/
+
+.avatar-container {
+    display: flex;
+    position: relative;
+    color: white;
+    background-color: #F8F2FF;
+    width: 100px;
+    height: 100px;
+}
+
+.avatar {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    font-size: 32px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    border-radius: 50%;
+    padding: 26px;
+}
+
+.avatar-badge {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 5.41667px;
+    position: absolute;
+    left: 66.67%;
+    right: 0%;
+    top: 66.67%;
+    bottom: 0%;
+    background-color: #777777;
+    color: white;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.stack-item {
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px; 
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.item-1 {
+    display: inline;
+    border: solid white 2px;
+}
+
+.item-2,
+.item-3,
+.item-4 {
+    display: inline;
+    border: solid white 2px;
+    margin-left: -16px;
+}
+
+.item-5 {
+    display: inline;
+    border: solid white 1px;
+    margin-left: -16px;
+    width: 22px;
+    height: 22px;
+    padding: 7px;
+    font-size: 16px;
+}
+
+
+    /*** Badge ***/
+
+.badge-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+    position: relative;
+    width: 66px;
+    height: 66px;
+    background-color: #F8F2FF;
+    
+}
+
+.badge {
+    font-size: 26px;
+    line-height: 100%;
+    text-align: center;
+    padding-top: 6px;
+    background-color: #777777;
+    color: white;
+    border-radius: 42%;
+    width: 66px;
+    height: 28px;
+}
+
+
+    /*** Breadcrumbs ***/
+
+.breadcrumbs-container {
+    width: 320px;
+    height: 320px;
+    background-color: #F8F2FF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-flex-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 8px;
+    position: relative;
+    width: 300px;
+    height: 24px;
+}
+
+.nav-icon {
+    width: 24px;
+    height: 24px;
+    font-weight: bolder;
+}
+
+.nav-label a {
+    margin-bottom: 4px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-1-container,
+.nav-2-container,
+.nav-3-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+    /*** Button ***/
+
+.button-container {
+    width: 180px;
+    height: 180px;
+    background-color: #F8F2FF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 8px;
+    position: relative;
+    width: 140px;
+    height: 50px;
+    background-color: black;
+    margin-left: 1px;
+}
+
+.base-button {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 22px;
+}
+
+.arrow {
+    font-size: 14px;
+}
+
+.base-button-label {
+    color: white;
+}
+
+.base-button:hover {
+    cursor: pointer;
+}
+
+
+    /*** Checkbox ***/
+
+.checkbox {
+    box-sizing: border-box;
+    background-color: #ebe3f5;
+}
+
+.container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border: 2px solid black;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: black;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+    /*** Chip ***/
+
+
+.chip-container {
+    width: 200px;
+    height: 60px;
+    background-color: #F8F2FF;
+    padding-top: 2px;
+    
+}
+
+.chip {
+    display: inline-block;
+    padding: 0 26px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 48px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+
+.chip-avatar {
+    float: left;
+    margin: 0 10px 0 -22px;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1px;
+    font-size: 18px;
+}
+
+.chip-button {
+    float: right;
+    margin: 0 -20px 0 12px;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1px;
+    font-size: 18px;
+    border: none;
+}
+
+.chip-button:hover {
+    cursor: pointer;
+}
+
+
+ /*** Divider ***/
+
+ .solid-base-divider {
+    border-top: 3px solid #bbb;
+}
+
+.solid-example-divider {
+    display: flex;
+    align-items: center;
+}
+
+.divider-label {
+    padding: 0 4px; 
+}
+
+.line {
+    flex: 1; 
+    height: 3px;
+    background-color: #bbb;
+}
+
+
+    /*** Input ***/
+
+.input-container {
+    width: 440px;
+    height: 440px;
+    background-color: #F8F2FF;
+    display: flex;
+    align-items: center;
+}
+
+.input-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: relative;
+    width: 400px;
+    height: 228px;
+}
+
+.input-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+    gap: 4px;
+    width: 400px;
+}
+
+.input-icon-bar {
+    width: 400px;
+    height: 48px;
+    border: 1px solid black;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+}
+
+.input-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.input-form {
+    margin-left: 0;
+    margin-top: 3px;
+}
+
+.input-form-par {
+    margin-top: 0;
+    font-size: 12px;
+}
+
+textarea {
+    font-size: 14px;
+    border: solid 1px black;
+}
+
+
+    /*** Link ***/
+
+.link-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    width: 48px;
+    height: 100px;
+    background-color: #ebe3f5;
+}
+
+.link-img {
+    width: 28px;
+    height: 12px;
+    margin-left: 0;
+}
+
+
+    /*** Pagination ***/
+
+.page-container {
+    width: 320px;
+    height: 64px;
+    background-color: #F8F2FF;
+    display: flex;
+    align-items: center;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.pagination a {
+    width: 32px;
+    height: 32px;
+    border: none;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 5px;
+    margin: 0;
+}
+
+.pagination a.active {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.pagination a.left,
+.pagination a.right {
+    border: 1px solid black;
+}
+
+
+    /*** Radio ***/
+
+.radio-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 140px;
+    height: 200px;
+    background: #F5EDFF;
+}
+
+.label-span {
+    padding-left: 8px;
+}
+
+
+.radio-label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radio-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+.checkmark-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    border: 3px solid black;
+  }
+  
+  .radio-label input:checked ~ .checkmark-radio {
+    background-color: white;
+  }
+  
+  .checkmark-radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .radio-label input:checked ~ .checkmark-radio:after {
+    display: block;
+  }
+  
+  .radio-label .checkmark-radio:after {
+       top: 3px;
+       left: 3px;
+       width: 18px;
+       height: 18px;
+       border-radius: 50%;
+       background: black;
+  }
+
+
+    /*** Tabs ***/
+
+.tabs-container {
+    width: 342px;
+    height: 90px;
+    background-color: #EDE7E7;
+    display: flex;
+    align-items: center;
+}
+
+.tabs-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: -5px;
+    position: relative;
+    width: 342px;
+    height: 80px;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 68px;
+    height: 72px;
+    text-decoration: none;
+    color: black;
+}
+
+.tab img {
+    width: 24px;
+    height: 24px;
+    padding-left: 5px;
+}
+
+.tab p {
+    font-size: 16px;
+}
+
+.tab:hover {
+    width: 70px;
+    height: 72px;
+    border-bottom: 3px solid black;
+    font-weight: bold;
+}
